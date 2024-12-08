@@ -2,7 +2,7 @@
 import React from 'react';
 import ProductCard from './ProductCard';
 
-const featuredProducts = [
+const featuredProducts: Array<{ image: string; title: string; code: string; price: string }> = [
   {
     image: '/images/chair1.png',
     title: 'Cantilever Chair',
@@ -29,19 +29,20 @@ const featuredProducts = [
   },
 ];
 
+
 const FeaturedProduct = () => {
   return (
     <section className="py-10 px-5 md:px-20 bg-gray-50">
       <h2 className="text-3xl font-semibold text-center text-indigo-900 mb-8">Featured Products</h2>
       <div className="flex flex-wrap justify-center gap-2">
         {featuredProducts.map((product, index) => (
-          <ProductCard
-            key={index}
-            image={product.image}
-            title={product.title}
-            code={product.code}
-            price={product.price}
-          />
+         <ProductCard
+         key={index}
+         image={product.image || '/images/default-image.png'}
+         title={product.title || 'Unknown Product'}
+         code={product.code || 'No Code'}
+         price={product.price || '0.00'}
+       />
         ))}
       </div>
     </section>
