@@ -23,6 +23,7 @@ const featuredProducts = [
   },
   {
     image: '/images/chair4.png',
+    title: 'Cantilever Chair',
     code: 'V3323B',
     price: '6200',
   },
