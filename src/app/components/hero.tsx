@@ -65,7 +65,7 @@ function Hero() {
         <p className="text-sm text-pink-500 font-medium">
           Best Furniture For Your Castle...
         </p>
-        <h1 className="text-3xl md:text-4xl font-bold text-indigo-950 leading-tight mt-2 font-josefin">
+        <h1 className="text-3xl md:text-4xl font-bold text-black leading-tight mt-2 font-josefin">
           {current.title}
         </h1>
         <p className="text-gray-600 text-sm mt-4 leading-relaxed">
@@ -93,7 +93,7 @@ function Hero() {
       </div>
 
       {/* Navigation Dots */}
-      <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 flex space-x-3">
+      <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 flex space-x-3">
   {slides.map((_, index) => (
     <button
       key={index}
