@@ -1,3 +1,5 @@
+import { FiShoppingCart, FiHeart, FiSearch } from "react-icons/fi";
+
 export default function Products() {
   const products = [
     { id: 7, name: "Comfort Handy Craft", price: "$42.00", oldPrice: "$65.00" },
@@ -54,18 +56,37 @@ export default function Products() {
       </div>
 
       {/* Container for the product cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-16 mt-20">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16 mt-20">
         {products.map((product) => (
           <div
             key={product.id}
-            className="w-full max-w-[360px] h-auto bg-white flex flex-col items-start"
+            className="w-full max-w-[360px] h-auto bg-white flex flex-col items-start relative group"
           >
+            {/* Garland "On Sale" */}
+            <div className="absolute top-4 left-4 bg-[#3F509E] text-white text-xs font-bold px-2 py-1 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+             Sale
+            </div>
+
             {/* Image Section */}
             <img
               src={`/images/${product.id}.png`}
               alt={product.name}
               className="w-full h-[260px] object-contain"
             />
+
+            {/* Icons - Left Vertical */}
+            <div className="absolute left-4 bottom-14 flex flex-col gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <button className="bg-blue-100 p-2 rounded-full shadow-md text-[#2F1AC4]">
+                <FiShoppingCart size={12} />
+              </button>
+              <button className="bg-blue-100 p-2 rounded-full shadow-md text-[#2F1AC4]">
+                <FiHeart size={12} />
+              </button>
+              <button className="bg-blue-100 p-2 rounded-full shadow-md text-[#2F1AC4]">
+                <FiSearch size={12} />
+              </button>
+            </div>
+
             {/* Text Section */}
             <div className="p-2 w-full flex justify-between items-center font-josefin">
               {/* Product Name */}
