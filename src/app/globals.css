@@ -10,4 +10,15 @@
 .font-lato {
     font-family: 'Lato', sans-serif;
   }
-  
+
+.bg-pink {
+  background-color: #FB2E86;
+}
+
+.text-pink {
+  color: #FB2E86;
+}
+
+.text-blue {
+  color: #151875;
+}
