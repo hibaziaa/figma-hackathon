@@ -19,49 +19,50 @@ const Discount = () => {
   };
 
   return (
-    <div className=" px-20">
-      <h1 className="text-3xl font-bold text-center text-blue mb-8 font-josefin">Discount Item</h1>
+    <div className="mt-32 px-6 lg:px-20">
+  <h1 className="text-3xl font-bold text-center text-blue mb-8 font-josefin">Discount Item</h1>
 
-      <div className="md:flex items-center justify-between">
-        {/* Left section (Text and Button) */}
-        <div className="md:w-[50%] font-lato">
-          <h2 className="text-blue md:text-[35px] text-[24px]">{discountItem.title}</h2>
-          <h3 className="text-pink font-semibold mb-2 md:mb-6">{discountItem.des}</h3>
-          <p className="text-[#B7BACB] md:w-[65%]">{discountItem.peragraph}</p>
+  <div className="md:flex items-center justify-between">
+    {/* Left section (Text and Button) */}
+    <div className="md:w-[50%] font-lato">
+      <h2 className="text-blue md:text-[35px] text-[24px]">{discountItem.title}</h2>
+      <h3 className="text-pink font-semibold mb-2 md:mb-6">{discountItem.des}</h3>
+      <p className="text-[#B7BACB] md:w-[65%]">{discountItem.peragraph}</p>
 
-          <div className="md:flex mt-6 font-lato">
-            <div className="mt-4">
-              <div className="flex items-center text-blue gap-1">
-                <BsCheck2 />
-                <h4 className="text-[#B7BACB] mr-16">{discountItem.list}</h4>
-              </div>
-              <div className="flex items-center text-blue gap-1 mt-3">
-                <BsCheck2 />
-                <h4 className="text-[#B7BACB]">{discountItem.list3}</h4>
-              </div>
-            </div>
-
-            <div className="mt-4">
-              <div className="flex items-center text-blue gap-1">
-                <BsCheck2 />
-                <h4 className="text-[#B7BACB]">{discountItem.list2}</h4>
-              </div>
-              <div className="flex items-center text-blue gap-1 mt-3">
-                <BsCheck2 />
-                <h4 className="text-[#B7BACB]">{discountItem.list4}</h4>
-              </div>
-            </div>
+      <div className="md:flex mt-6 font-lato">
+        <div className="mt-4">
+          <div className="flex items-center text-blue gap-1">
+            <BsCheck2 />
+            <h4 className="text-[#B7BACB] mr-16">{discountItem.list}</h4>
           </div>
-
-          <button className="mt-8 bg-pink text-white py-2 px-4 rounded">{discountItem.btn}</button>
+          <div className="flex items-center text-blue gap-1 mt-3">
+            <BsCheck2 />
+            <h4 className="text-[#B7BACB]">{discountItem.list3}</h4>
+          </div>
         </div>
 
-        {/* Right section (Image) */}
-        <div className="md:w-[45%]">
-          <img src="/images/discount.png" alt="discountImage" className="w-full h-auto" />
+        <div className="mt-4">
+          <div className="flex items-center text-blue gap-1">
+            <BsCheck2 />
+            <h4 className="text-[#B7BACB]">{discountItem.list2}</h4>
+          </div>
+          <div className="flex items-center text-blue gap-1 mt-3">
+            <BsCheck2 />
+            <h4 className="text-[#B7BACB]">{discountItem.list4}</h4>
+          </div>
         </div>
       </div>
+
+      <button className="mt-8 bg-pink text-white py-2 px-4 rounded">{discountItem.btn}</button>
     </div>
+
+    {/* Right section (Image) */}
+    <div className="md:w-[45%]">
+      <img src="/images/discount.png" alt="discountImage" className="w-full h-auto" />
+    </div>
+  </div>
+</div>
+
   );
 };
 
