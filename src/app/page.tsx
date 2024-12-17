@@ -1,4 +1,4 @@
-import LatestBlog from "./components/blogs";
+import LatestBlog from "./components/latestBlog";
 import BrandsImg from "./components/brands";
 import FeaturedProduct from "./components/featuredProducts";
 import Hero from "./components/hero";
