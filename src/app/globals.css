@@ -22,3 +22,7 @@
 .text-blue {
   color: #151875;
 }
+
+.subscribe-bg {
+  background-image: url('/images/subscribe.png');
+}

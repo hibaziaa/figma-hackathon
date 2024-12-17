@@ -5,6 +5,7 @@ import Hero from "./components/hero";
 import Offers from "./components/offer";
 import Products from "./components/products";
 import Discount from "./components/discount";
+import Subscribe from "./components/subscribe";
 
 export default function Home() {
   return (
@@ -13,9 +14,11 @@ export default function Home() {
       <FeaturedProduct />
       <Products />
       <Offers />
+      <Discount />
+      <Subscribe />
       <BrandsImg />
       <LatestBlog />
-      <Discount />
+ 
     </>
   );
 }
