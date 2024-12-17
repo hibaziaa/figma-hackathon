@@ -31,7 +31,7 @@ const LatestBlog = () => {
 
   return (
     <div className='md:mt-32 md:mb-32 px-20 '>
-        <h2 className='text-3xl font-bold text-center text-blue mb-8'>Latest Blog</h2>
+        <h2 className='text-3xl font-bold text-center text-blue mb-8 font-josefin'>Latest Blog</h2>
         <div className='lg:flex justify-center'>
             {blogData.map((item, index) => {
                 return (
