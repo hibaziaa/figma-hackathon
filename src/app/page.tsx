@@ -6,6 +6,7 @@ import Offers from "./components/offer";
 import Products from "./components/products";
 import Discount from "./components/discount";
 import Subscribe from "./components/subscribe";
+import Trending from "./components/trending";
 
 export default function Home() {
   return (
@@ -18,7 +19,7 @@ export default function Home() {
       <Subscribe />
       <BrandsImg />
       <LatestBlog />
- 
+      <Trending />
     </>
   );
 }
