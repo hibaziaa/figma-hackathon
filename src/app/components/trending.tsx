@@ -63,7 +63,7 @@ const Trending = () => {
                         </div>
                         <div className='flex justify-center items-center gap-2'>
                             <h5 className='font-semibold'>{item.offerPrice}</h5>
-                            <h6 className='text-xs font-semibold text-[#151875]'>{item.regularPrice}</h6>
+                            <h6 className='text-xs font-semibold text-[#1518754D] line-through'>{item.regularPrice}</h6>
                         </div>
                     </div>
                 </div>

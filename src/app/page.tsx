@@ -8,6 +8,7 @@ import Discount from "./components/discount";
 import Subscribe from "./components/subscribe";
 import Trending from "./components/trending";
 import UniqueProducts from "./components/UniqueProducts";
+import TopCategory from "./components/topCategory";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <UniqueProducts/>
       <Trending />
       <Discount />
+      <TopCategory/>
       <Subscribe />
       <BrandsImg />
       <LatestBlog />

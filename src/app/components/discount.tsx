@@ -25,7 +25,7 @@ const Discount = () => {
   <div className="md:flex items-center justify-between">
     {/* Left section (Text and Button) */}
     <div className="md:w-[50%] font-lato">
-      <h2 className="text-blue md:text-[35px] text-[24px]">{discountItem.title}</h2>
+      <h2 className="text-3xl font-bold text-blue mb-8 font-josefin">{discountItem.title}</h2>
       <h3 className="text-pink font-semibold mb-2 md:mb-6">{discountItem.des}</h3>
       <p className="text-[#B7BACB] md:w-[65%]">{discountItem.peragraph}</p>
 

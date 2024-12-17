@@ -9,7 +9,7 @@ const UniqueProducts = () => {
             </div>
             <div className='flex items-center'>
                 <div>
-                    <h2 className='text-3xl font-bold text-center text-blue mb-8 font-josefin'>
+                    <h2 className='text-3xl font-bold text-blue mb-8 font-josefin'>
                       Unique Features Of Latest &<br/>Trending Products
                     </h2>
                     <ul>
