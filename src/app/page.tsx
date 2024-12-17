@@ -7,6 +7,7 @@ import Products from "./components/products";
 import Discount from "./components/discount";
 import Subscribe from "./components/subscribe";
 import Trending from "./components/trending";
+import UniqueProducts from "./components/UniqueProducts";
 
 export default function Home() {
   return (
@@ -15,11 +16,12 @@ export default function Home() {
       <FeaturedProduct />
       <Products />
       <Offers />
+      <UniqueProducts/>
+      <Trending />
       <Discount />
       <Subscribe />
       <BrandsImg />
       <LatestBlog />
-      <Trending />
     </>
   );
 }
