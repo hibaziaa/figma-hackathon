@@ -126,7 +126,7 @@ const Navbar = () => {
           Blog
         </Link>
         <Link
-          href="/shop"
+          href="/shopGridDefault"
           className="block py-2 text-base font-medium text-[#0d0e43] hover:text-[#FB2E86] relative"
         >
           Shop
