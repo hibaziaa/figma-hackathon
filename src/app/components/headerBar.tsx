@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function HeaderBar(){
   return(
@@ -61,38 +62,47 @@ export default function HeaderBar(){
       />
     </div>
     {/* Login */}
-    <div className="flex items-center gap-1">
-      <p className="font-medium text-sm md:text-base leading-4 text-[#F1F1F1]">
-        Login
-      </p>
-      <Image
-        src="/images/loginVector.png"
-        alt="login"
-        width={16}
-        height={16}
-      />
-    </div>
-    {/* Wishlist */}
-    <div className="flex items-center gap-1">
-      <p className="font-medium text-sm md:text-base leading-4 text-[#F1F1F1]">
-        Wishlist
-      </p>
-      <Image
-        src="/images/heartVector.png"
-        alt="heart"
-        width={16}
-        height={16}
-      />
-    </div>
-    {/* Cart */}
-    <div className="flex items-center">
-      <Image
-        src="/images/cartVector.png"
-        alt="cart"
-        width={24}
-        height={24}
-      />
-    </div>
+   {/* Login */}
+   <Link href="/login">
+        <div className="flex items-center gap-1 cursor-pointer">
+          <p className="font-medium text-sm md:text-base leading-4 text-[#F1F1F1] hover:text-[#ceccc4]">
+            Login
+          </p>
+          <Image
+            src="/images/loginVector.png"
+            alt="login"
+            width={16}
+            height={16}
+          />
+        </div>
+      </Link>
+
+      {/* Wishlist */}
+      <Link href="/wishlist">
+        <div className="flex items-center gap-1 cursor-pointer">
+          <p className="font-medium text-sm md:text-base leading-4 text-[#F1F1F1] hover:text-[#ceccc4]">
+            Wishlist
+          </p>
+          <Image
+            src="/images/heartVector.png"
+            alt="heart"
+            width={16}
+            height={16}
+          />
+        </div>
+      </Link>
+
+      {/* Cart */}
+      <Link href="/cart">
+        <div className="flex items-center cursor-pointer">
+          <Image
+            src="/images/cartVector.png"
+            alt="cart"
+            width={24}
+            height={24}
+          />
+        </div>
+      </Link>
   </div>
 </div>
 

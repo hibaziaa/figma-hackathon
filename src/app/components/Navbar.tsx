@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import Link from "next/link"; // For routing
+import Link from "next/link";
 import { useState } from "react";
 
 const Navbar = () => {
@@ -35,12 +35,50 @@ const Navbar = () => {
               />
             </span>
           </Link>
-          <Link
-            href="/pages"
-            className="text-base font-medium text-[#0d0e43] hover:text-[#FB2E86] relative group"
-          >
-            Pages
-          </Link>
+          <div className="relative group">
+  <Link
+    href="/pages"
+    className="text-base font-medium text-[#0d0e43] hover:text-[#FB2E86]"
+  >
+    Pages
+  </Link>
+  {/* Dropdown Menu */}
+  <div className="absolute left-0 mt-2 hidden w-48 bg-white shadow-lg group-hover:block">
+    <ul className="text-sm text-[#0d0e43]">
+      <li className="hover:bg-gray-100">
+        <Link href="/about" className="block px-4 py-2">
+          About Us
+        </Link>
+      </li>
+      <li className="hover:bg-gray-100">
+        <Link href="/faqs" className="block px-4 py-2">
+          FAQs
+        </Link>
+      </li>
+      <li className="hover:bg-gray-100">
+        <Link href="/hekto-demo" className="block px-4 py-2">
+          Hekto Demo
+        </Link>
+      </li>
+      <li className="hover:bg-gray-100">
+        <Link href="/shop-list" className="block px-4 py-2">
+          Shop List
+        </Link>
+      </li>
+      <li className="hover:bg-gray-100">
+        <Link href="/shop-list-sidebar" className="block px-4 py-2">
+          Shop List Side Bar
+        </Link>
+      </li>
+      <li className="hover:bg-gray-100">
+        <Link href="/order-completed" className="block px-4 py-2">
+          Order Completed
+        </Link>
+      </li>
+    </ul>
+  </div>
+</div>
+
           <Link
             href="/products"
             className="text-base font-medium text-[#0d0e43] hover:text-[#FB2E86] relative group"
