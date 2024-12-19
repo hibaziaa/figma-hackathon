@@ -22,7 +22,13 @@
 .text-blue {
   color: #151875;
 }
-
+.bg-blue {
+  background-color: #151875;
+}
 .subscribe-bg {
   background-image: url('/images/subscribe.png');
+}
+
+.shadow-primary {
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
 }
