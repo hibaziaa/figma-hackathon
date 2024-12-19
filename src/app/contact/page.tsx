@@ -1,7 +1,7 @@
 import React from "react";
 
 const Contact = () => {
-  const contactWayData = [
+  const contactData = [
     {
       title: "Tel: 877-67-88-99",
       des: "E-Mail: shop@store.com",
@@ -59,7 +59,7 @@ const Contact = () => {
         Contact Way
       </h2>
       <div className="md:grid grid-cols-2 gap-12">
-        {contactWayData.map((item) => (
+        {contactData.map((item) => (
           <div className="flex items-center gap-4 mb-8" key={item.title}>
             <div>
               <img src={item.pic} alt="bullet points" />
