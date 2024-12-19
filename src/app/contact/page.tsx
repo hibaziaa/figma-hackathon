@@ -89,14 +89,14 @@ const Contact = () => {
         <div className="mt-4">
           <div className="flex justify-between">
             <input
-              className="border-gray-300 h-[50px] rounded-md w-[45%] my-6"
-              placeholder="Your Name"
+              className="border-gray-300 border-2 p-2 h-[50px] rounded-md w-[45%] my-6"
+              placeholder="Your Name*"
               type="text"
               name="name"
               id="name"
             />
             <input
-              className="border-gray-300 h-[50px] w-[45%] rounded-md my-6"
+              className="border-gray-300 border-2 p-2 h-[50px] w-[45%] rounded-md my-6"
               placeholder="Your E-mail"
               type="text"
               name="email"
@@ -104,14 +104,14 @@ const Contact = () => {
             />
           </div>
           <input
-            className="border-gray-300 h-[50px] rounded-md w-full md:my-6 mb-6"
+            className="border-gray-300 border-2 p-2 h-[50px] rounded-md w-full md:my-6 mb-6"
             placeholder="Subject*"
             type="text"
             name="subject"
             id="subject"
           />
           <textarea
-            className="w-full border-gray-300 h-[197px] rounded-md md:my-6 mb-6"
+            className="w-full border-gray-300 border-2 p-2 h-[197px] rounded-md md:my-6 mb-6"
             placeholder="Type Your Message*"
             name="comment"
             form="userform"
@@ -129,6 +129,7 @@ const Contact = () => {
 </div>
 
     </div>
+
   );
 };
 
