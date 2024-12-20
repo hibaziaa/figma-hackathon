@@ -6,7 +6,7 @@ import { FaLinkedin } from 'react-icons/fa';
 function Footer() {
   return (
     <footer className="text-[#8A8FB9] font-lato bg-[#EEEFFB]">
-      <div className="container pt-12 mx-auto ">
+      <div className="container pt-12 mx-auto mt-10">
         <div className="flex flex-wrap items-start justify-around md:text-left text-center order-first">
           {/* Hekto Section */}
           <div className="lg:w-1/4 md:w-1/2 w-full px-8 mb-8">
