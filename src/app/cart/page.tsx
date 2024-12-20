@@ -17,7 +17,7 @@ const CartPage = () => {
           </div>
         </div>
       </div>
-      <div className="md:container mx-auto md:px-20">
+      <div className="md:container mx-auto md:px-20 px-10">
         <div className="md:flex justify-between gap-8 md:mt-28 mt-12 md:mb-28 mb-12">
           <div className="md:w-[990px]">
             <CartProduct />
