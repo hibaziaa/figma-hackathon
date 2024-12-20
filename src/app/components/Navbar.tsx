@@ -56,7 +56,7 @@ const Navbar = () => {
         </Link>
       </li>
       <li className="hover:bg-gray-100">
-        <Link href="/hekto-demo" className="block px-4 py-2">
+        <Link href="/demo" className="block px-4 py-2">
           Hekto Demo
         </Link>
       </li>
