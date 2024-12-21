@@ -71,7 +71,7 @@ const Navbar = () => {
         </Link>
       </li>
       <li className="hover:bg-gray-100">
-        <Link href="/order-completed" className="block px-4 py-2">
+        <Link href="/orderComplete" className="block px-4 py-2">
           Order Completed
         </Link>
       </li>

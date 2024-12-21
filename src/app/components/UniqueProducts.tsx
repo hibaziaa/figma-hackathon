@@ -28,7 +28,7 @@ const UniqueProducts = () => {
                     </ul>
                     
                     <div className='flex gap-x-5 mt-10'>
-                        <button className='bg-pink text-white px-4 py-2 font-josefin'>Add To Cart</button>
+                        <button className='bg-pink text-white px-4 py-2 font-josefin hover:bg-[#d1236e] rounded-sm'>Add To Cart</button>
 
                         <div>
                             <h5 className='text-blue font-semibold font-josefin'>B&B Italian Sofa</h5>

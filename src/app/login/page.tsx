@@ -31,7 +31,7 @@ const MyAccount = () => {
                             <input className='w-full border-gray-300 border-2 p-2' placeholder='Password' type="password" name="" id="" />
                         </div>
                         <h5 className='text-[17px] text-[#9295AA] mt-3 mb-6  md:text-[14px] font-lato font-normal'>Forgot your password?</h5>
-                        <button className='w-full bg-pink text-white text-[14px] md:text-[17px] md:px-11 px-8 md:py-3 py-2 rounded-sm font-josefin font-medium'>Sign In</button>
+                        <button className='w-full bg-pink text-white text-[14px] md:text-[17px] md:px-11 px-8 md:py-3 py-2 rounded-sm font-josefin font-medium hover:bg-[#d1236e]'>Sign In</button>
                           <h5 className='text-[17px] text-[#9295AA] text-center mt-7 md:text-[14px] font-lato font-normal'>Don’t have an Account?Create account</h5>
                 </div>
         </div>
