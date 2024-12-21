@@ -66,8 +66,8 @@ const Navbar = () => {
         </Link>
       </li>
       <li className="hover:bg-gray-100">
-        <Link href="/shop-list-sidebar" className="block px-4 py-2">
-          Shop List Side Bar
+        <Link href="/shopLeft" className="block px-4 py-2">
+          Shop Left Side Bar
         </Link>
       </li>
       <li className="hover:bg-gray-100">
