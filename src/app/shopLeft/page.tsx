@@ -171,7 +171,7 @@ const ShopLeft = () => {
 
         <div className="lg:px-20 px-[.8rem] md:pt-[98px] pt-12 flex items-center justify-between">
           <div className="">
-            <h2 className="text-blue text-[28px] lg:text-[30px] 2xl:text-[34px] font-josefin font-extrabold">
+            <h2 className="text-blue text-[28px] 2xl:text-[34px] font-josefin font-extrabold">
               Ecommerce Acceories & Fashion item
             </h2>
             <h4 className="text-[#8A8FB9] font-lato text-[16px] font-medium">
@@ -399,7 +399,7 @@ const ShopLeft = () => {
                         {leftIcon.map((item) => {
                           return (
                             <div className="flext justify-center mt-6 bg-white rounded-full p-4 shadow-2xl ">
-                              <Link href="" className="text-blue text-xl">
+                              <Link href="" className="text-blue text-xl  font-lato text-[14px] md:text-[1rem] hover:text-[#fb2e86]">
                                 
                                   {item.icon}
                                 

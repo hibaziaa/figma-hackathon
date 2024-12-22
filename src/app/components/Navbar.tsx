@@ -37,7 +37,7 @@ const Navbar = () => {
           </Link>
           <div className="relative group">
   <Link
-    href="/pages"
+    href="/shopList"
     className="text-base font-medium text-[#0d0e43] hover:text-[#FB2E86]"
   >
     Pages
@@ -58,11 +58,6 @@ const Navbar = () => {
       <li className="hover:bg-gray-100">
         <Link href="/demo" className="block px-4 py-2">
           Hekto Demo
-        </Link>
-      </li>
-      <li className="hover:bg-gray-100">
-        <Link href="/shop-list" className="block px-4 py-2">
-          Shop List
         </Link>
       </li>
       <li className="hover:bg-gray-100">
