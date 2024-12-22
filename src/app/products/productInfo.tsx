@@ -34,7 +34,7 @@ const ProductInfo = () => {
                     className={`text-lg cursor-pointer font-semibold ${
                       isActive
                         ? "underline text-pink" 
-                        : "hover:underline hover:text-pink" 
+                        : "hover:underline hover:text-[#fb2e86]" 
                     }`}
                     onClick={() => setActive(item.btn)}
                   >

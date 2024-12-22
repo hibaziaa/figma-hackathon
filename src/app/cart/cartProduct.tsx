@@ -90,10 +90,10 @@ const CartProduct = () => {
       </div>
 
       <div className="flex justify-between mt-2 md:mt-8 mb-12">
-        <button className="bg-pink text-white text-[14px] md:text-[17px] md:px-11 px-8 md:py-3 py-2 rounded-sm font-josefin font-medium hover:bg-[#d1236e] ">
+        <button className="bg-pink text-white text-[14px] md:text-[17px] md:px-11 px-8 md:py-3 py-2 rounded-sm font-josefin font-medium hover:bg-[#e02977] ">
           Update cart
         </button>
-        <button className="bg-pink text-white text-[14px] md:text-[17px] md:px-11 px-8 md:py-3 py-2 rounded-sm font-josefin font-medium hover:bg-[#d1236e] ">
+        <button className="bg-pink text-white text-[14px] md:text-[17px] md:px-11 px-8 md:py-3 py-2 rounded-sm font-josefin font-medium hover:bg-[#e02977] ">
           Clear cart
         </button>
       </div>

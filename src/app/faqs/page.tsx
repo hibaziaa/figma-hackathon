@@ -80,7 +80,7 @@ const faqs = () => {
         placeholder="Type Your Message*"
       ></textarea>
 
-      <button className="md:my-6 bg-pink text-white text-[14px] md:text-[17px] md:px-11 px-8 md:py-3 py-2 rounded-sm font-josefin font-medium hover:bg-[#d1236e]">
+      <button className="md:my-6 bg-pink text-white text-[14px] md:text-[17px] md:px-11 px-8 md:py-3 py-2 rounded-sm font-josefin font-medium hover:bg-[#e02977]">
         Send Mail
       </button>
     </div>

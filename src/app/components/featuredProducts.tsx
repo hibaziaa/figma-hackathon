@@ -12,7 +12,7 @@ const FeaturedProducts = () => {
   return (
     <div className="py-16 bg-white">
       {/* Heading */}
-      <h2 className="text-[32px] md:text-[42px] font-bold leading-[1.2] font-josefin text-center text-[#1A0B5B] mb-8">
+      <h2 className="text-[32px] md:text-[42px] font-bold leading-[1.2] font-josefin text-center text-blue mb-12">
         Featured Products
       </h2>
 

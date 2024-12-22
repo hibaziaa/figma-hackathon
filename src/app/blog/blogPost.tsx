@@ -29,7 +29,7 @@ const BlogPost = () => {
 
                 <div className="mt-6">
                   <a
-                    className="font-semibold text-blue font-josefin text-[30px] md:text-[1rem] hover:text-pink"
+                    className="font-semibold text-blue font-josefin text-[30px] md:text-[1rem] hover:text-[#fb2e86]"
                     href={item.href}
                   >
                     {item.title}

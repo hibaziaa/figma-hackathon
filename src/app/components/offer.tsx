@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 interface OfferCardProps {
   icon: string;
@@ -19,34 +19,36 @@ const OfferCard: React.FC<OfferCardProps> = ({ icon, title, description }) => {
 const Offers = () => {
   const offerCards = [
     {
-      icon: '/images/free-delivery.png',
-      title: '24/7 Support',
+      icon: "/images/free-delivery.png",
+      title: "24/7 Support",
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.',
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.",
     },
     {
-      icon: '/images/money-back.png',
-      title: '24/7 Support',
+      icon: "/images/money-back.png",
+      title: "24/7 Support",
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.',
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.",
     },
     {
-      icon: '/images/premium-quality.png',
-      title: '24/7 Support',
+      icon: "/images/premium-quality.png",
+      title: "24/7 Support",
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.',
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.",
     },
     {
-      icon: '/images/support.png',
-      title: '24/7 Support',
+      icon: "/images/support.png",
+      title: "24/7 Support",
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.',
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.",
     },
   ];
 
   return (
     <section className="py-10 px-5 md:px-20">
-      <h2 className="text-3xl font-bold text-center text-blue mb-8">What Shopex Offer!</h2>
+      <h2 className="text-[32px] md:text-[42px] font-bold leading-[1.2] font-josefin text-center text-blue mb-12">
+        What Shopex Offer!
+      </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {offerCards.map((card, index) => (
           <OfferCard

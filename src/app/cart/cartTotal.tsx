@@ -78,7 +78,7 @@ const CartTotal = () => {
           <div className="md:w-[350px] border-[1px] mt-2"></div>
         </div>
 
-        <button className=" mt-11 font-lato font-medium bg-pink text-white text-[14px] md:text-[17px] md:px-11 px-8 md:py-3 py-2 rounded-sm hover:bg-[#d1236e] ">
+        <button className=" mt-11 font-lato font-medium bg-pink text-white text-[14px] md:text-[17px] md:px-11 px-8 md:py-3 py-2 rounded-sm hover:bg-[#e02977] ">
           Calculate Shiping
         </button>
       </div>

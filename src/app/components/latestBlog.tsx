@@ -31,7 +31,7 @@ const LatestBlog = () => {
 
   return (
     <div className='md:mt-32 md:mb-32 px-20 '>
-        <h2 className='text-3xl font-bold text-center text-blue mb-8 font-josefin'>Latest Blog</h2>
+        <h2 className='text-[32px] md:text-[42px] font-bold leading-[1.2] font-josefin text-center text-blue mb-12'>Latest Blog</h2>
         <div className='lg:flex justify-center'>
             {blogData.map((item, index) => {
                 return (
@@ -52,9 +52,9 @@ const LatestBlog = () => {
                             </div>
                         </div>
                         <div className='ml-4 font-lato'>
-                            <h3 className='text-blue font-josefin hover:text-pink'>{item.title}</h3>
-                            <h4 className='mt-4 text-[#72718F]'>{item.info}</h4>
-                            <h4 className='text-blue text-sm mt-4 underline hover:text-pink'>{item.footer}</h4>
+                            <h3 className='text-blue font-josefin hover:text-[#fb2e86] text-[16px] md:text-[18px] font-bold'>{item.title}</h3>
+                            <h4 className='mt-4 text-[#72718F] text-[16px] font-josefin font-medium'>{item.info}</h4>
+                            <h4 className='text-blue text-sm mt-4 underline hover:text-[#fb2e86] text-[16px] font-josefin font-medium'>{item.footer}</h4>
                         </div>
                     </div>
                 );

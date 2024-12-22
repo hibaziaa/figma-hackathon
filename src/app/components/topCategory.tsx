@@ -24,7 +24,7 @@ const TopCategory = () => {
   
     return (
       <div className=" px-[.8rem] lg:px-40 lg:mt-32 mt-12">
-        <h1 className="text-3xl font-bold text-center text-blue mb-8 font-josefin">
+        <h1 className="text-[32px] md:text-[42px] font-bold leading-[1.2] font-josefin text-center text-blue mb-12">
           Top Categories
         </h1>
   
@@ -40,13 +40,13 @@ const TopCategory = () => {
                         alt=""
                         className="w-full h-full object-cover rounded-full"
                       />
-                      <div className="absolute bottom-4 bg-green-500 text-white text-center py-1 px-2 opacity-0 hover:opacity-100 transition-opacity duration-300">
+                      <div className="absolute bottom-4 bg-green-500 text-white rounded-sm text-center py-1 px-2 opacity-0 hover:opacity-100 transition-opacity duration-300">
                         <button className="text-sm font-medium">View Shop</button>
                       </div>
                     </div>
   
                     <div className="text-center mt-6 text-blue md:mb-0 mb-16">
-                      <h3 className="font-josefin font-medium">{item.title}</h3>
+                      <h3 className="font-josefin font-bold">{item.title}</h3>
                       <h4>{item.price}</h4>
                     </div>
                   </div>

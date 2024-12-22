@@ -34,10 +34,10 @@ export default function Products() {
 
   return (
     <div
-      className="container mx-auto px-4 py-8"
+      className="container mx-auto px-4 py-8 mb-12"
       style={{ backgroundColor: "white" }}
     >
-      <h1 className="text-[32px] md:text-[42px] font-bold leading-[1.2px] font-josefin text-center text-[#1A0B5B] mb-8">
+      <h1 className="text-[32px] md:text-[42px] font-bold leading-[1.2] font-josefin text-center text-blue mb-12">
         Latest Products
       </h1>
       <div className="flex justify-center space-x-8 gap-4 text-[#151875] mt-12">

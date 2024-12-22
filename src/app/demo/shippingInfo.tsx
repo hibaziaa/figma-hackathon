@@ -79,7 +79,7 @@ const ShippingInfo = () => {
               </div>
             </div>
 
-            <button className="md:mt-28 mt-12 bg-pink hover:bg-[#d1236e] text-white text-[14px] md:text-[17px] md:px-11 px-8 md:py-3 py-2 rounded-sm font-josefin font-medium">Continue Shipping</button>
+            <button className="md:mt-28 mt-12 bg-pink hover:bg-[#e02977] text-white text-[14px] md:text-[17px] md:px-11 px-8 md:py-3 py-2 rounded-sm font-josefin font-medium">Continue Shipping</button>
           </div>
         </div>
       </div>
