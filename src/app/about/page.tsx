@@ -20,37 +20,23 @@ const About = () => {
       </div>
 
      {/* About Image and Content Section */}
-<div className="container mx-auto px-4 md:px-6 lg:px-16 flex flex-col lg:grid lg:grid-cols-2 items-center gap-8 md:gap-12 py-8 md:py-12 lg:py-20">
-  {/* Image Section */}
-  <div className="relative flex justify-center lg:justify-start w-full">
-    <div className="bg-[#2B3CAB] rounded-lg w-full sm:w-[80%] md:w-[70%] lg:w-[552px] h-[180px] sm:h-[200px] md:h-[240px] relative">
-      <Image
-        src="/images/aboutOne.png"
-        alt="about image"
-        height={390}
-        width={555}
-        objectFit="cover"
-        className="absolute left-[5%] rounded-lg shadow-lg sm:h-[190px] md:h-[230px]"
-      />
-    </div>
-  </div>
+     <div className='lg:px-20 px-[.8rem] lg:grid grid-cols-2 items-center lg:py-20 py-6 relative '>
+            
+            <div className=' flex '>
+                <div className='bg-[#2B3CAB] w-[555px] h-[249px] lg:h-[409px] pl-4 pb-4 rounded-lg '>
+                    <div className='absolute'>
+                        <img className='lg:w-full lg:h-[390px]' src="/images/aboutOne.png" alt="" />
+                    </div>
+                </div>
+            </div>
 
-  {/* Text Content */}
-  <div className="text-center lg:text-left px-4">
-    <h2 className="text-blue font-josefin text-3xl md:text-4xl leading-[36px] md:leading-[48px] font-bold mb-4">
-      Know About Our Ecommerce Business, History
-    </h2>
-    <p className="text-[#8A8FB9] font-lato text-sm md:text-base leading-relaxed mb-6 md:mb-8">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis neque
-      ultrices mattis aliquam, malesuada diam est. Malesuada sem tristique
-      amet erat vitae eget dolor lobortis. Accumsan faucibus vitae lobortis
-      quis bibendum quam.
-    </p>
-    <button className="bg-pink text-white font-lato rounded-[3px] px-4 py-2 md:px-6 md:py-3">
-      Contact Us
-    </button>
-  </div>
-</div>
+            <div className='mt-6'>
+                <h2 className='text-blue font-josefin font-extrabold text-[28px] md:text-[34px]'>Know About Our Ecomerce Business, History</h2>
+                <p className='lg:mt-4 text-[#9295AA] text-[14px] md:text-[16px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis neque ultrices mattis aliquam, malesuada diam est. Malesuada sem tristique amet erat vitae eget dolor lobortis. Accumsan faucibus vitae lobortis quis bibendum quam.</p>
+                <button className='lg:mt-16 mt-4 bg-pink text-white text-[14px] md:text-[17px] md:px-11 px-8 md:py-3 py-2 rounded-sm font-josefin font-medium hover:bg-[#c71562]'>Contact us</button>
+            </div>
+
+        </div>
 
 
       {/* Offers Section */}
