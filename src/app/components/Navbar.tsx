@@ -43,7 +43,7 @@ const Navbar = () => {
     Pages
   </Link>
   {/* Dropdown Menu */}
-  <div className="absolute left-0 mt-2 hidden w-48 bg-white shadow-lg group-hover:block">
+  <div className="absolute left-0 mt-2 hidden w-48 bg-white shadow-lg group-hover:block z-50">
     <ul className="text-sm text-[#0d0e43]">
       <li className="hover:bg-gray-100">
         <Link href="/about" className="block px-4 py-2">
