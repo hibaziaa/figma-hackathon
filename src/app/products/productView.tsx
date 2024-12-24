@@ -16,7 +16,7 @@ const ProductView = () => {
   ];
 
   return (
-    <div className="flex justify-center items-center px-4 sm:px-10 lg:px-40">
+    <div className="flex justify-center items-center px-4 sm:px-10 lg:px-20">
       <div className="w-full md:flex shadow-primary p-3 my-8 2xl:my-24 bg-white">
         <div className="grid grid-cols-1 justify-center">
           <div>

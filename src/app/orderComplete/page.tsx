@@ -26,7 +26,7 @@ const OrderComplete = () => {
             <div className="flex justify-center">
               <img
                 className="w-[70px] md:w-max"
-                src="/images/orderDone.png"
+                src="/images/orderdone.png"
                 alt="order done"
               />
             </div>
