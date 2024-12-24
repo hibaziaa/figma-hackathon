@@ -36,43 +36,43 @@ const Navbar = () => {
             </span>
           </Link>
           <div className="relative group">
-  <Link
-    href="/shopList"
-    className="text-base font-medium text-[#0d0e43] hover:text-[#FB2E86]"
-  >
-    Pages
-  </Link>
-  {/* Dropdown Menu */}
-  <div className="absolute left-0 mt-2 hidden w-48 bg-white shadow-lg group-hover:block z-50">
-    <ul className="text-sm text-[#0d0e43]">
-      <li className="hover:bg-gray-100">
-        <Link href="/about" className="block px-4 py-2">
-          About Us
-        </Link>
-      </li>
-      <li className="hover:bg-gray-100">
-        <Link href="/faqs" className="block px-4 py-2">
-          FAQs
-        </Link>
-      </li>
-      <li className="hover:bg-gray-100">
-        <Link href="/demo" className="block px-4 py-2">
-          Hekto Demo
-        </Link>
-      </li>
-      <li className="hover:bg-gray-100">
-        <Link href="/shopLeft" className="block px-4 py-2">
-          Shop Left Side Bar
-        </Link>
-      </li>
-      <li className="hover:bg-gray-100">
-        <Link href="/orderComplete" className="block px-4 py-2">
-          Order Completed
-        </Link>
-      </li>
-    </ul>
-  </div>
-</div>
+            <Link
+              href="/shopList"
+              className="text-base font-medium text-[#0d0e43] hover:text-[#FB2E86]"
+            >
+              Pages
+            </Link>
+            {/* Dropdown Menu */}
+            <div className="absolute left-0 mt-2 hidden w-48 bg-white shadow-lg group-hover:block z-50">
+              <ul className="text-sm text-[#0d0e43]">
+                <li className="hover:bg-gray-100">
+                  <Link href="/about" className="block px-4 py-2">
+                    About Us
+                  </Link>
+                </li>
+                <li className="hover:bg-gray-100">
+                  <Link href="/faqs" className="block px-4 py-2">
+                    FAQs
+                  </Link>
+                </li>
+                <li className="hover:bg-gray-100">
+                  <Link href="/demo" className="block px-4 py-2">
+                    Hekto Demo
+                  </Link>
+                </li>
+                <li className="hover:bg-gray-100">
+                  <Link href="/shopLeft" className="block px-4 py-2">
+                    Shop Left Side Bar
+                  </Link>
+                </li>
+                <li className="hover:bg-gray-100">
+                  <Link href="/orderComplete" className="block px-4 py-2">
+                    Order Completed
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
 
           <Link
             href="/products"
@@ -140,12 +140,45 @@ const Navbar = () => {
         >
           Home
         </Link>
-        <Link
-          href="/pages"
-          className="block py-2 text-base font-medium text-[#0d0e43] hover:text-[#FB2E86] relative"
-        >
-          Pages
-        </Link>
+        <div className="relative group">
+          <Link
+            href="/shopList"
+            className="text-base font-medium text-[#0d0e43] hover:text-[#FB2E86]"
+          >
+            Pages
+          </Link>
+          {/* Dropdown Menu */}
+          <div className="absolute left-0 mt-2 hidden w-48 bg-white shadow-lg group-hover:block z-50">
+            <ul className="text-sm text-[#0d0e43]">
+              <li className="hover:bg-gray-100">
+                <Link href="/about" className="block px-4 py-2">
+                  About Us
+                </Link>
+              </li>
+              <li className="hover:bg-gray-100">
+                <Link href="/faqs" className="block px-4 py-2">
+                  FAQs
+                </Link>
+              </li>
+              <li className="hover:bg-gray-100">
+                <Link href="/demo" className="block px-4 py-2">
+                  Hekto Demo
+                </Link>
+              </li>
+              <li className="hover:bg-gray-100">
+                <Link href="/shopLeft" className="block px-4 py-2">
+                  Shop Left Side Bar
+                </Link>
+              </li>
+              <li className="hover:bg-gray-100">
+                <Link href="/orderComplete" className="block px-4 py-2">
+                  Order Completed
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+
         <Link
           href="/products"
           className="block py-2 text-base font-medium text-[#0d0e43] hover:text-[#FB2E86] relative"
