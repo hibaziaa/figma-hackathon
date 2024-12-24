@@ -29,9 +29,9 @@ const RelatedProduct = () => {
   ];
 
   return (
-    <div className="mx-auto px-4 lg:px-40 mb-12">
+    <div className="mx-auto mb-12 lg:px-20 px-4">
       <h2 className="text-blue font-josefin font-extrabold text-[28px] md:text-[34px] mb-8">Related Products</h2>
-      <div className=" md:flex justify-between gap-8  ">
+      <div className=" md:flex justify-between flex-wrap">
         {relatedProductData.map((item , index) => {
           return (
             <div className="mb-8" key={index}>
