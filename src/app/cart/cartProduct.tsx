@@ -32,9 +32,9 @@ const CartProduct = () => {
       </div>
 
       <div className="">
-        {cartproductdata.map((item) => {
+        {cartproductdata.map((item , index) => {
           return (
-            <div>
+            <div key={index}>
               <div className="flex items-center  md:mb-8 mb-4">
                 <div className="w-[60px] md:w-[90px] ">
                   <img src={item.pic} alt="shopping items" />

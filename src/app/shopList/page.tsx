@@ -47,11 +47,15 @@ const ShopList = () => {
           <div className="hidden lg:block">
             <div className="flex gap-9 ">
               <div className="flex gap-2">
-                <h3 className="text-blue font-normal text-[16px] md:text-[18px]  font-lato">Per Page: </h3>
+                <h3 className="text-blue font-normal text-[16px] md:text-[18px]  font-lato">
+                  Per Page:{" "}
+                </h3>
                 <h3 className="border rounded-sm border-[#E7E6EF] py-4 px-8 text-[16px] md:text-[18px] font-bold font-lato"></h3>
               </div>
               <div className="flex gap-2">
-                <h3 className="text-blue font-normal text-[16px] md:text-[18px] font-lato">Sort By: </h3>
+                <h3 className="text-blue font-normal text-[16px] md:text-[18px] font-lato">
+                  Sort By:{" "}
+                </h3>
                 <h4 className="text-[#8A8FB9] border rounded-sm border-[#E7E6EF] py-1 px-3 font-lato flex items-center gap-1 text-[16px] font-medium">
                   Best Match
                   <span>
@@ -61,7 +65,9 @@ const ShopList = () => {
               </div>
               <div className="flex gap-8">
                 <div className="flex items-center gap-2">
-                  <h3 className="text-blue font-normal text-[16px] md:text-[18px] font-lato">View:</h3>
+                  <h3 className="text-blue font-normal text-[16px] md:text-[18px] font-lato">
+                    View:
+                  </h3>
                   <FaListUl className="text-blue" />
                   <BsFillGridFill className="text-blue" />
                 </div>
@@ -74,9 +80,9 @@ const ShopList = () => {
         </div>
 
         <div className="lg:px-20 px-[.8rem] md:mt-24 mt-6">
-          {shopListData.map((item) => {
+          {shopListData.map((item, index) => {
             return (
-              <div className="mb-8">
+              <div className="mb-8" key={index}>
                 <div className=" md:flex gap-6 boxShadow p-2 md:p-6 items-center ">
                   <div>
                     <img src={item.pic} alt="" />
@@ -84,7 +90,9 @@ const ShopList = () => {
 
                   <div>
                     <div className="flex items-center gap-4">
-                      <h3 className="text-blue text-[16px] md:text-[18px] font-bold font-lato">{item.title}</h3>
+                      <h3 className="text-blue text-[16px] md:text-[18px] font-bold font-lato">
+                        {item.title}
+                      </h3>
                       <div className="my-3 flex justify-center ">
                         <div className="flex h-3 md:w-[80px]  gap-2">
                           <div className="h-3 w-3 rounded-full bg-[#FFCC2E]"></div>
@@ -95,18 +103,25 @@ const ShopList = () => {
                     </div>
 
                     <div className="flex items-center gap-3">
-                      <h4 className="text-blue text-[16px] font-josefin font-medium">{item.offerPrice}</h4>
+                      <h4 className="text-blue text-[16px] font-josefin font-medium">
+                        {item.offerPrice}
+                      </h4>
                       <h4 className="text-pink line-through text-[16px] font-josefin font-medium">
                         {item.regularPrice}
                       </h4>
                       <img src={item.review} alt="" />
                     </div>
-                    <p className="mt-3 md:w-[70%] text-[#9295AA] text-[14px] md:text-[16px]">{item.des}</p>
+                    <p className="mt-3 md:w-[70%] text-[#9295AA] text-[14px] md:text-[16px]">
+                      {item.des}
+                    </p>
                     <div className="flex items-center gap-4 ">
-                      {listIcon.map((item) => {
+                      {listIcon.map((item , index) => {
                         return (
-                          <div className="flext justify-center mt-6 bg-white rounded-full p-4 shadow-2xl ">
-                            <Link className="text-xl text-blue font-lato text-[14px] md:text-[1rem] hover:text-[#fb2e86]" href="">
+                          <div className="flext justify-center mt-6 bg-white rounded-full p-4 shadow-2xl " key={index}>
+                            <Link
+                              className="text-xl text-blue font-lato text-[14px] md:text-[1rem] hover:text-[#fb2e86]"
+                              href=""
+                            >
                               {item.icon}
                             </Link>
                           </div>

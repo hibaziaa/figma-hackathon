@@ -52,9 +52,9 @@ const Trending = () => {
         Trending Products
       </h1>
       <div className="md:flex gap-6">
-        {trending.map((item) => {
+        {trending.map((item , index) => {
           return (
-            <div className="shadow-primary h-[350px] md:w-[270px] p-3 mb-8 md:mb-0">
+            <div className="shadow-primary h-[350px] md:w-[270px] p-3 mb-8 md:mb-0" key={index}>
               <div>
                 <div className="bg-[#F5F6F8] grid justify-center items-center h-[227px]">
                   <img src={item.pic} alt="trending product" />
@@ -106,9 +106,9 @@ const Trending = () => {
         </div>
 
         <div className="">
-          {executiveData.map((item) => {
+          {executiveData.map((item , index) => {
             return (
-              <div className="">
+              <div key={index}>
                 <div className="flex items-center pb-6">
                   <div className="bg-[#F5F6F8] h-[74px] w-[107px] mr-[9px] grid justify-center gap-y-4 items-center">
                     <img src={item.pic} alt="chair" />

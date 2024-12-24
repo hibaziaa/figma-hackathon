@@ -60,9 +60,9 @@ const BlogHistory = () => {
           Recent Post
         </h3>
         <div>
-          {recentPostData.map((item) => {
+          {recentPostData.map((item, index) => {
             return (
-              <div className="flex items-center gap-3 my-6">
+              <div className="flex items-center gap-3 my-6" key={index}>
                 <div>
                   <img src={item.pic} alt="recent posts" />
                 </div>
@@ -85,9 +85,9 @@ const BlogHistory = () => {
           Sale Product
         </h3>
         <div>
-          {saleProductData.map((item) => {
+          {saleProductData.map((item , index) => {
             return (
-              <div className="flex items-center gap-3 my-6">
+              <div className="flex items-center gap-3 my-6" key={index}>
                 <div>
                   <img src={item.pic} alt="sale products" />
                 </div>
@@ -111,9 +111,9 @@ const BlogHistory = () => {
         </h3>
 
         <div className="grid grid-cols-2 ">
-          {offerProductData.map((item) => {
+          {offerProductData.map((item , index) => {
             return (
-              <div className="mb-6">
+              <div className="mb-6" key={index}>
                 <div className="flex justify-between  text-center">
                   <div>
                     <img src={item.pic} alt="offer products" />

@@ -156,18 +156,18 @@ const ShopLeft = () => {
   return (
     <>
       <div>
-      <div className="bg-[#F6F5FF]">
-        <div className="container mx-auto px-4 md:px-6 lg:px-16 pt-6 pb-6 md:pt-[50px] md:pb-[50px]">
-          <h2 className="text-blue font-josefin text-3xl md:text-4xl leading-[36px] md:leading-[42.19px]">
-            Shop Left Sidebar
-          </h2>
-          <div className="flex gap-2 font-lato text-sm md:text-base font-medium mt-2">
-            <h4>Home</h4>
-            <h4>. Pages</h4>
-            <h4 className="text-pink">. Shop Left Sidebar</h4>
+        <div className="bg-[#F6F5FF]">
+          <div className="container mx-auto px-4 md:px-6 lg:px-16 pt-6 pb-6 md:pt-[50px] md:pb-[50px]">
+            <h2 className="text-blue font-josefin text-3xl md:text-4xl leading-[36px] md:leading-[42.19px]">
+              Shop Left Sidebar
+            </h2>
+            <div className="flex gap-2 font-lato text-sm md:text-base font-medium mt-2">
+              <h4>Home</h4>
+              <h4>. Pages</h4>
+              <h4 className="text-pink">. Shop Left Sidebar</h4>
+            </div>
           </div>
         </div>
-      </div>
 
         <div className="lg:px-20 px-[.8rem] md:pt-[98px] pt-12 flex items-center justify-between">
           <div className="">
@@ -181,11 +181,15 @@ const ShopLeft = () => {
           <div className="hidden lg:block">
             <div className="flex gap-9 ">
               <div className="flex gap-2">
-                <h3 className="text-blue font-normal text-[16px] md:text-[18px] font-lato">Per Page: </h3>
+                <h3 className="text-blue font-normal text-[16px] md:text-[18px] font-lato">
+                  Per Page:{" "}
+                </h3>
                 <h3 className="border rounded-sm border-[#E7E6EF] py-4 px-8 text-[16px] md:text-[18px] font-bold font-lato"></h3>
               </div>
               <div className="flex gap-2">
-                <h3 className="text-blue font-normal text-[16px] md:text-[18px] font-lato">Sort By: </h3>
+                <h3 className="text-blue font-normal text-[16px] md:text-[18px] font-lato">
+                  Sort By:{" "}
+                </h3>
                 <h4 className="text-[#8A8FB9] border rounded-sm border-[#E7E6EF] py-1 px-3 font-lato flex items-center gap-1 text-[16px] font-medium">
                   Best Match{" "}
                   <span>
@@ -195,7 +199,9 @@ const ShopLeft = () => {
               </div>
               <div className="flex gap-8">
                 <div className="flex items-center gap-2">
-                  <h3 className="text-blue font-normal text-[16px] md:text-[18px] font-lato">View:</h3>
+                  <h3 className="text-blue font-normal text-[16px] md:text-[18px] font-lato">
+                    View:
+                  </h3>
                   <FaListUl className="text-blue" />
                   <BsFillGridFill className="text-blue" />
                 </div>
@@ -215,9 +221,9 @@ const ShopLeft = () => {
               </h3>
 
               <div>
-                {filterData.map((item) => {
+                {filterData.map((item, index) => {
                   return (
-                    <div>
+                    <div key={index}>
                       <div className="flex items-center gap-3 py-1">
                         <input
                           className="bg-[#E5E0FC] text-[#603EFF] border-none"
@@ -239,9 +245,9 @@ const ShopLeft = () => {
               </h3>
 
               <div>
-                {discountData.map((item) => {
+                {discountData.map((item, index) => {
                   return (
-                    <div>
+                    <div key={index}>
                       <div className="flex items-center gap-3 py-1">
                         <input
                           className="bg-[#FFDBF1] text-pink border-none"
@@ -263,16 +269,18 @@ const ShopLeft = () => {
               </h3>
 
               <div>
-                {reviewData.map((item) => {
+                {reviewData.map((item, index) => {
                   return (
-                    <div>
+                    <div key={index}>
                       <div className="flex items-center gap-3 py-1 ">
                         <input
                           className="bg-[#FFF6DA] text-[#FFCC2E] border-none"
                           type="checkbox"
                         />
                         <img src={item.pic} alt="" />
-                        <h5 className="text-[10px] md:text-[14px] font-lato font-normal">{item.count}</h5>
+                        <h5 className="text-[10px] md:text-[14px] font-lato font-normal">
+                          {item.count}
+                        </h5>
                       </div>
                     </div>
                   );
@@ -284,9 +292,9 @@ const ShopLeft = () => {
                   Categories
                 </h3>
                 <div>
-                  {categoriesData.map((item) => {
+                  {categoriesData.map((item, index) => {
                     return (
-                      <div>
+                      <div key={index}>
                         <div className="flex items-center gap-3 py-1">
                           <input
                             className="bg-[#FFDBF1] text-pink border-none"
@@ -307,9 +315,9 @@ const ShopLeft = () => {
                   Price Filter
                 </h3>
                 <div>
-                  {priceData.map((item) => {
+                  {priceData.map((item, index) => {
                     return (
-                      <div>
+                      <div key={index}>
                         <div className="flex items-center gap-3 py-1">
                           <input
                             className="bg-[#FFDBF1] text-pink border-none"
@@ -344,9 +352,9 @@ const ShopLeft = () => {
                   Filter By Color
                 </h3>
                 <div className="grid grid-cols-3 gap-4">
-                  {colorName.map((item) => {
+                  {colorName.map((item, index) => {
                     return (
-                      <div className="flex items-center gap-1">
+                      <div className="flex items-center gap-1" key={index}>
                         <div>
                           <h4 className="text-[16px] font-josefin font-medium">
                             <img src={item.color} alt="" />
@@ -354,7 +362,9 @@ const ShopLeft = () => {
                         </div>
 
                         <div>
-                          <h4 className="text-[16px] font-josefin font-medium">{item.title}</h4>
+                          <h4 className="text-[16px] font-josefin font-medium">
+                            {item.title}
+                          </h4>
                         </div>
                       </div>
                     );
@@ -365,9 +375,9 @@ const ShopLeft = () => {
           </div>
 
           <div className=" md:w-max">
-            {shopLeftData.map((item) => {
+            {shopLeftData.map((item, index) => {
               return (
-                <div className=" mb-8">
+                <div className="mb-8" key={index}>
                   <div className=" md:flex gap-6 boxShadow p-6 items-center ">
                     <div>
                       <img src={item.pic} alt="" />
@@ -375,7 +385,9 @@ const ShopLeft = () => {
 
                     <div>
                       <div className="flex items-center gap-4">
-                        <h3 className="text-blue text-[16px] md:text-[18px] font-bold font-lato">{item.title}</h3>
+                        <h3 className="text-blue text-[16px] md:text-[18px] font-bold font-lato">
+                          {item.title}
+                        </h3>
                         <div className="my-3 flex justify-center ">
                           <div className="flex h-3 w-[80px]  gap-2">
                             <div className="h-3 w-3 rounded-full bg-[#FFCC2E]"></div>
@@ -386,7 +398,9 @@ const ShopLeft = () => {
                       </div>
 
                       <div className="flex items-center gap-3">
-                        <h4 className="text-blue text-[16px] font-josefin font-medium">{item.offerPrice}</h4>
+                        <h4 className="text-blue text-[16px] font-josefin font-medium">
+                          {item.offerPrice}
+                        </h4>
                         <h4 className="text-pink line-through text-[16px] font-josefin font-medium">
                           {item.regularPrice}
                         </h4>
@@ -396,13 +410,17 @@ const ShopLeft = () => {
                         {item.des}
                       </p>
                       <div className="flex items-center gap-4 ">
-                        {leftIcon.map((item) => {
+                        {leftIcon.map((item, index) => {
                           return (
-                            <div className="flext justify-center mt-6 bg-white rounded-full p-4 shadow-2xl ">
-                              <Link href="" className="text-blue text-xl  font-lato text-[14px] md:text-[1rem] hover:text-[#fb2e86]">
-                                
-                                  {item.icon}
-                                
+                            <div
+                              className="flext justify-center mt-6 bg-white rounded-full p-4 shadow-2xl"
+                              key={index}
+                            >
+                              <Link
+                                href=""
+                                className="text-blue text-xl  font-lato text-[14px] md:text-[1rem] hover:text-[#fb2e86]"
+                              >
+                                {item.icon}
                               </Link>
                             </div>
                           );

@@ -5,9 +5,9 @@ const BlogPost = () => {
   return (
     <div>
       <div>
-        {blogPostData.map((item) => {
+        {blogPostData.map((item, index) => {
           return (
-            <div>
+            <div key={index}>
               <div>
                 <div>
                   <img src={item.pic} alt="" />

@@ -29,9 +29,9 @@ const TopCategory = () => {
         </h1>
   
         <div className="w-full lg:flex gap-3 2xl:gap-9">
-          {topCatagoriesData.map((item) => {
+          {topCatagoriesData.map((item , index) => {
             return (
-              <div className="w-full lg:w-1/4 p-2">
+              <div className="w-full lg:w-1/4 p-2" key={index}>
                 <div className="flex justify-center">
                   <div>
                     <div className="relative flex justify-center bg-[#31208A0D] shadow-primary 2xl:h-[269px] h-[220px] w-[220px] 2xl:w-[269px] p-6 rounded-full overflow-hidden">

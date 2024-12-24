@@ -5,9 +5,9 @@ const DemoProduct = () => {
   return (
     <div className="md:mt-44 mt-12">
       <div>
-        {demoProductData.map((item) => {
+        {demoProductData.map((item , index) => {
           return (
-            <div>
+            <div key={index}>
               <div className="flex gap-4 mb-4 items-center">
                 <div>
                   <img src={item.pic} alt="demo Image" />
